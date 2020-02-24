@@ -15,7 +15,7 @@ private:
     float k1, k2, k3, k4;
     void step();
 public:
-    explicit RK4();
+    RK4();
     void get();
 };
 
