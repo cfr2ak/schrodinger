@@ -1,9 +1,24 @@
-#ifndef GUN_RUNGE_KUTTA_H
-#define GUN_RUNGE_KUTTA_H
+#ifndef GY_RUNGE_KUTTA_H
+#define GY_RUNGE_KUTTA_H
 
-namespace gun
+#include <vector>
+
+using namespace std;
+
+namespace gy
 {
 
-
+class RK4
+{
+private:
+    vector<float> y;
+    float k1, k2, k3, k4;
+    void step();
+public:
+    explicit RK4();
+    void get();
+};
 
 }
+
+#endif
